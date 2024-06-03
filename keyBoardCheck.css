@@ -1,5 +1,7 @@
+/*
 table,th,td {
     border: 1px solid #e7e7e7;
+
 }
 
 .project {
@@ -10,10 +12,89 @@ table,th,td {
     justify-content: center;
     text-align: center;
     height: 100vh;
+    
+}
+
+.key{
+    font-size: 45px ;
+
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .color{
     color: aliceblue;
     display: flex;
     flex-direction: row;
+}
+*/
+
+/* Reset some basic elements for consistency */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.project {
+    background: linear-gradient(to right, #141E30, #243B55);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    flex-direction: column;
+    transition: background 0.5s ease;
+}
+
+.project:hover {
+    background: linear-gradient(to right, #0f2027, #203A43, #2C5364);
+}
+
+.key {
+    font-size: 2em;
+    margin: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s, background 0.5s;
+}
+
+.key:hover {
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* For any other text or color class if needed */
+.color {
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Table styling */
+table {
+    width: 80%; /* Increase the table width */
+    margin: 20px auto; /* Center the table */
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 20px solid #e7e7e7;
+    padding: 40px; /* Increase padding for cells */
+    font-size: 2.0em; /* Increase font size for readability */
+}
+
+th {
+    background-color: #2C3E50;
+    color: white;
+}
+
+td {
+    background-color: #e57e3d;
 }
